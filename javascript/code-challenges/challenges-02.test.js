@@ -41,6 +41,7 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
+  return arr.map(str => str + '?');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,6 +56,11 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 
 const forLoopTwoToThe = (arr) => {
   // Solution code here...
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(Math.pow(2, arr[i]));
+  }
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,6 +71,11 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
+  let result = [];
+  arr.forEach((element) => {
+    result.push(Math.pow(2, element));
+  });
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,6 +86,9 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
+  return arr.map((element) => {
+    return Math.pow(2, element);
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
