@@ -13,7 +13,7 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
-  return people.map(person => ({ fullName: `${person.firstName} ${person.lastName}` }));
+  return people.map(person => ({ fullName: `${person.firstName} ,  ${person.lastName}` }));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -25,7 +25,7 @@ Write a function named addValues that, given an array of numbers as input, uses 
 
 const addValues = (arr) => {
   // Solution code here...
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
